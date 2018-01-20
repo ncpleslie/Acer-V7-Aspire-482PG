@@ -5,6 +5,7 @@ Place all patched DSDT/SSDTs into the EFI/Clover/ACPI/patched folder
 
 **DSDT**
 
+* Rename _DSM methods to XDSM
 * Fix _WAK Arg0 v2
 * HPET Fix
 * SMBUS Fix
@@ -63,5 +64,31 @@ External (_SB_.PCI0.RP05.PEGP._ON, MethodObj) // Warning: Unresolved Method, gue
 
 
 
-**SSDT**
+**About the SSDTs**
+
+```
+SSDT-0 = This SSDT is for CPU (CPU Scopes) - Ignore. We will create our own
+SSDT-1 = This SSDT is for CPU (CPU Scopes) - Ignore. We will create our own
+SSDT-2 = This SSDT is for the Internal Graphics Card (\_SB.PCI0, B0D3, GFX0)
+SSDT-3 = This SSDT is for the Nvidia Graphics Card (\_SB.PCI0)
+SSDT-4 = This SSDT is unknown, but is needed (\_SB and IAOE)
+```
+
+* Apply ```Rename _DSM methods to XDSM``` to all SSDTs
+
+**SSDT-2**
+
+* Apply Rename GFX0 to IGPU patch
+* Haswell HD4400 Patch
+            ```However replace 0x06, 0x00, 0x26, 0x0a to 0x0C, 0x00, 0x16, 0x0A in the patch, which more compatible with HD4400```
+
+
+**SSDT-3**
+
+* Apply Rename GFX0 to IGPU
+
+**SSDT-4**
+
+* Apply Rename GFX0 to IGPU
+
 
