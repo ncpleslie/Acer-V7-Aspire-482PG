@@ -1,6 +1,8 @@
 Pre-patched DSDT/SSDT are avaliable but I'd recommend patching your own. If using Clover, then push ```F4``` to dump DSDT/SSDT into EFI/Clover/ACPI/Origin
 Place all patched DSDT/SSDTs into the EFI/Clover/ACPI/patched folder
 
+I have used MaciASL to apply these patches, using [Rehabman's Repository of patches for Laptops](https://github.com/RehabMan/Laptop-DSDT-Patch). 
+
 **Patches applied**
 
 **DSDT**
@@ -93,7 +95,7 @@ SSDT-4 = This SSDT is unknown, but is needed (\_SB and IAOE)
 
 **SSDT-0 and SSDT-1**
 
-We will generate these using [https://github.com/Piker-Alpha/ssdtPRGen.sh]
+We will generate these using [this tool](https://github.com/Piker-Alpha/ssdtPRGen.sh)
 
 ```curl -o ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/Beta/ssdtPRGen.sh
 chmod +x ssdtPRGen.sh
@@ -103,6 +105,11 @@ chmod +x ssdtPRGen.sh
 ASL Input:     /Users/USER/Library/ssdtPRGen/ssdt.dsl - 264 lines, 7903 bytes, 49 keywords
 AML Output:    /Users/USER/Library/ssdtPRGen/ssdt.aml - 1619 bytes, 16 named objects, 33 executable opcodes
 ```
+
+**Brightness Fix**
+Due to errors/bugs in High Sierra, we are unable to simply apply a patch to fix the Brightness
+
+[Please follow this guide to get Brightness working](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)
 
 
 
