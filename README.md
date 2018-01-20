@@ -17,3 +17,10 @@ So far, I have managed to get the Acer laptop running on High Sierra (10.13.2)
 **Not Working**
 * Wifi and Bluetooth (Intel Wifi cards do not work with Hackintosh. I use a USB Bluetooth/Wifi Dongle)
 * Computer will boot to screen glitch (Will remain glitched until the laptop screen is closed, and then reopened)
+
+**Helpful resources**
+
+Sound: https://www.reddit.com/r/hackintosh/comments/4sil5p/audio_mechanic_old_patchfix_removal_applealc/
+Indepth DSDT/SSDT information: https://github.com/Kaijun/Acer-V5-573g-DSDT
+How to patch DSDT/SSDT: https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
+Backlight: https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/
