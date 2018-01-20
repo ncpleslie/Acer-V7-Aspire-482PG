@@ -91,4 +91,18 @@ SSDT-4 = This SSDT is unknown, but is needed (\_SB and IAOE)
 
 * Apply Rename GFX0 to IGPU
 
+**SSDT-0 and SSDT-1**
+
+We will generate these using [https://github.com/Piker-Alpha/ssdtPRGen.sh]
+
+```curl -o ssdtPRGen.sh https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/Beta/ssdtPRGen.sh
+chmod +x ssdtPRGen.sh
+./ssdtPRGen.sh -x 1 -p 'i5-4200U'
+```
+```
+ASL Input:     /Users/USER/Library/ssdtPRGen/ssdt.dsl - 264 lines, 7903 bytes, 49 keywords
+AML Output:    /Users/USER/Library/ssdtPRGen/ssdt.aml - 1619 bytes, 16 named objects, 33 executable opcodes
+```
+
+
 
