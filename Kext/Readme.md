@@ -18,4 +18,5 @@ The follow Kext have been installed into /Library/Extensions
 * AppleHDA
 * VoodooPS2Controller
 * ACPIBatteryManager
+
 There could be more, but at this stage, I am unable to remember what I have added
