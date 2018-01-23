@@ -16,7 +16,8 @@ So far, I have managed to get the Acer laptop running on High Sierra (10.13.2)
 
 **Not Working**
 * Wifi and Bluetooth (Intel Wifi cards do not work with Hackintosh. I use a USB Bluetooth/Wifi Dongle)
-* Computer will boot to screen glitch (Will remain glitched until the laptop screen is closed, and then reopened)
+* Computer will boot to screen glitch (See Graphics Fix to symptom fix (Not bug fix))
+* Power Preferences do not save (See Power Fix)
 
 **Helpful resources**
 
