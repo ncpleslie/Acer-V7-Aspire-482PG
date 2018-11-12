@@ -1,5 +1,5 @@
-I found that when I booted, it would display a garbled image, from the Apple boot logo, to login. 
-To remedy this, you could simply put the laptop to sleep, or close the lid for 3 seconds.
+I found that when I booted it would display a garbled image from the Apple boot logo to login. 
+To remedy this you could simply put the laptop to sleep, or close the lid for 3 seconds.
 
 I created a small AppleScript to fix this bug. 
 
